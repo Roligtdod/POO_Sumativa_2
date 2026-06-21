@@ -68,7 +68,7 @@ Para ejecutar este proyecto necesitas tener instalado:
 Puedes descargar el proyecto como archivo `.zip` o clonarlo desde un repositorio si se encuentra disponible.
 ```
 
-bash git clone <URL_DEL_REPOSITORIO>``` 
+bash git clone <https://github.com/Roligtdod/POO_Sumativa_2)>
 
 Luego ingresa a la carpeta del proyecto:
 ```
