@@ -1,0 +1,23 @@
+Franco;Flores;Guia turisitco;123
+Metropolitana;Gastronomico;150000
+Valparaiso;Turistico;100000
+
+Floette;Sylveon;Guia turisitco;670
+Biobío;Turismo;200000
+Biobío;Turismo;250000
+
+Nicolas;Hormazabal;Guia turisitco;778
+Magallanes y de la Antártica Chilena;Gastronomica;120000
+Aysén del General Carlos Ibáñez del Campo;Gastronomica;30000
+
+Franco;Flores;Guia turisitco;230
+Arica y parinacota;Gastronomico;90000
+Tarapacá ;Gastronomico;120000
+
+Roland;Ruina;Practicante;00000
+City;Gastronomico;92000
+Metropolitana;Religoso;20000
+
+Max;Pino;Practicante;999
+Valpairso;Gastronomico;100000
+Meltro;Turisico;200000
