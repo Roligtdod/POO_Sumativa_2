@@ -42,8 +42,6 @@ El sistema incluye las siguientes opciones principales:
 ## Estructura del Proyecto
 ```
 
-text POOS5/ │ ├── src/ │ ├── main/ │ │ ├── java/ │ │ │ ├── app/ │ │ │ │ └── Main.java │ │ │ ├── data/ │ │ │ └── model/ │ │ └── resources/ │ │ │ └── test/ │ ├── pom.xml ├── Tours.txt └── README.md``` 
-
 ## Tecnologías Utilizadas
 
 - **Java**
