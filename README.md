@@ -97,7 +97,8 @@ text src/main/java/app/Main.java```
 Al iniciar la aplicación, se mostrará un menú en consola similar al siguiente:
 ```
 
-text ------------========Menu principal========------------ Bienvenido al sistema de catalogo de tours
+------------========Menu principal========------------ 
+Bienvenido al sistema de catalogo de tours
 Mostrar trabajadores
 Agregar un nuevo trabajador
 Tours a menos de $200.000
@@ -140,19 +141,6 @@ Este proyecto fue desarrollado con fines educativos, principalmente para reforza
 - Buenas prácticas de organización de código.
 - Uso de Maven en proyectos Java.
 - Desarrollo de aplicaciones por consola.
-
-## Posibles Mejoras Futuras
-
-Algunas mejoras que podrían implementarse en futuras versiones son:
-
-- Validación avanzada de entradas del usuario.
-- Persistencia de datos en archivos o base de datos.
-- Edición y eliminación de trabajadores.
-- Asociación completa entre trabajadores y tours.
-- Interfaz gráfica de usuario.
-- Reportes de tours y trabajadores.
-- Pruebas unitarias.
-- Mejor manejo de errores y excepciones.
 
 ## Licencia
 
