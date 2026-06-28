@@ -1,8 +1,7 @@
 package app;
 
 import data.DataManager;
-import model.Tour;
-import model.Trabajadores;
+import model.*;
 
 import java.util.Scanner;
 
@@ -15,7 +14,24 @@ private static Trabajadores trabajador1 = new Trabajadores();
     static void main(String[] args) {
         scanner = new Scanner(System.in);
 
-        MostrarMenu();
+        Tour t1 = new Tour("123","RM", "Turistico","10",120000);
+        Tour t2 = new Tour("130","Valparaiso", "Turistico","10",90000);
+
+
+        Excursion ex1 = new Excursion(t1.getId(),t1.getRegion(),t1.getTipo(),t1.getDuracion(),t1.getValor(),"Templo Bahai", "Las torres 2000");
+        Excursion ex2 = new Excursion(t2.getId(),t2.getRegion(),t2.getTipo(),t2.getDuracion(),t2.getValor(), "Cerro San Cristobal","El cerro 750");
+        RutaGastronomica g1 = new RutaGastronomica(t1.getId(),t1.getRegion(),t1.getTipo(),t1.getDuracion(),t1.getValor(),"5");
+        PaseoLacustre p1 = new PaseoLacustre(t1.getId(),t1.getRegion(),t1.getTipo(),t1.getDuracion(),t1.getValor(),"Terrestre");
+        RutaGastronomica g2 = new RutaGastronomica(t2.getId(),t2.getRegion(),t2.getTipo(),t2.getDuracion(),t2.getValor(),"3");
+        PaseoLacustre p2 = new PaseoLacustre(t2.getId(),t2.getRegion(),t2.getTipo(),t2.getDuracion(),t2.getValor(),"Marino");
+
+
+        ex1.MostrarDatos();
+        g1.MostrarDatos();
+        p1.MostrarDatos();
+        ex2.MostrarDatos();
+        g2.MostrarDatos();
+        p2.MostrarDatos();
     }
 
     private static void MostrarMenu(){

@@ -60,8 +60,8 @@ public class DataManager {
                                 "\nTours que ofrece: ");
                         continue; // al detectar que se cumple una vez, contionua con la siguiente instrucción
                     }
-                    if(partes.length == 3) {
-                        Tour tour = new Tour(partes[0], partes[1], Integer.parseInt(partes[2]));
+                    if(partes.length == 5) {
+                        Tour tour = new Tour(partes[0], partes[1],partes[2], partes[3] ,Integer.parseInt(partes[4]));
                         trabajador.getTourslist().add(tour); // agrega el tour al trabajador que este en ese momento
                         System.out.println(tour.Textobonito()); // imprime el texto que se lee por consola
                     }
@@ -88,8 +88,8 @@ public class DataManager {
                 if(nombre != null) {
                     while((linea = br.readLine()) != null){
                         String[] partes = linea.split(";");
-                        if(partes.length == 3) {
-                            Tour tour = new Tour(partes[0], partes[1], Integer.parseInt(partes[2]));
+                        if(partes.length == 5) {
+                            Tour tour = new Tour(partes[0], partes[1], partes[2], partes[3], Integer.parseInt(partes[4]));
                             trabajador.getTourslist().add(tour);
                         }
                     }
@@ -118,14 +118,19 @@ public class DataManager {
         trabajador.setCargo(scanner.nextLine());
         System.out.println("Ingrese el id del trabajador: ");
         trabajador.setId(scanner.nextLine());
+        System.out.println("Ingrese los tours que ofrece el trabajador: ");
+        System.out.println("Ingrese el id del tour: ");
+        String id = scanner.nextLine();
         System.out.println("Ingrese la región del tour: ");
         String region = scanner.nextLine();
         System.out.println("Ingrese el tipo del tour: ");
         String tipo = scanner.nextLine();
+        System.out.println("Ingrese la duración en horas del tour");
+        String duracion = scanner.nextLine();
         System.out.println("Ingrese el valor del tour: ");
         int valor = scanner.nextInt();
         scanner.nextLine();
-        Tour tour = new Tour(region, tipo, valor);
+        Tour tour = new Tour(id, region, tipo, duracion, valor);
         trabajador.getTourslist().add(tour);
         GuardarDatos(trabajador);
         boolean salir = false;
@@ -135,26 +140,31 @@ public class DataManager {
         switch(opcion) {
             case 1:
                 while (!salir) {
-                System.out.println("Ingrese la región del tour: ");
-                region = scanner.nextLine();
-                System.out.println("Ingrese el tipo del tour: ");
-                tipo = scanner.nextLine();
-                System.out.println("Ingrese el valor del tour: ");
-                valor = scanner.nextInt();
-                tour = new Tour(region, tipo, valor);
-                GuardarTours(tour);
-                trabajador.getTourslist().add(tour);
-                System.out.println("Desea agregar otro tour? 1.- Si 2.-No:");
-                opcion = scanner.nextInt();
-                if(opcion == 2) {
+                    System.out.println("Ingrese el id del tour: ");
+                    id = scanner.nextLine();
+                    System.out.println("Ingrese la región del tour: ");
+                    region = scanner.nextLine();
+                    System.out.println("Ingrese el tipo del tour: ");
+                    tipo = scanner.nextLine();
+                    System.out.println("Ingrese la duración en horas del tour");
+                    duracion = scanner.nextLine();
+                    System.out.println("Ingrese el valor del tour: ");
+                    valor = scanner.nextInt();
+                    tour = new Tour(id, region, tipo, duracion, valor);
+                    GuardarTours(tour);
+                    trabajador.getTourslist().add(tour);
+                    System.out.println("Desea agregar otro tour? 1.- Si 2.-No:");
+                    opcion = scanner.nextInt();
+                    if(opcion == 2) {
+                        salir = true;
+                    }
+                    scanner.nextLine();
+                    }
+                    case 2:
                     salir = true;
-                }
-                scanner.nextLine();
-                }
-                case 2:
-                salir = true;
         }
         trabajadores.add(trabajador);
 
     }
+
 }
