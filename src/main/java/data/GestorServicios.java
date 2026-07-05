@@ -10,7 +10,7 @@ import java.util.ArrayList;
 public class GestorServicios {
 
 
-    public GestorServicios(){
+    public GestorServicios(){ // crea distintos tour con sus clases hijas para mostrarlo luego en main
 
         ArrayList<Tour> tour = new ArrayList<>();
         tour.add(new Excursion("101","RM", "Turistico","5",120000,"Templo Bahai", "Las torres 2000"));

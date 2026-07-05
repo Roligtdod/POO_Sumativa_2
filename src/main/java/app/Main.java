@@ -3,8 +3,6 @@ package app;
 import data.DataManager;
 import data.GestorServicios;
 import model.*;
-
-import java.util.ArrayList;
 import java.util.Scanner;
 
 
@@ -15,7 +13,7 @@ private static Scanner scanner;
     static void main(String[] args) {
         scanner = new Scanner(System.in);
 
-        GestorServicios gestorServicios = new GestorServicios();
+        new GestorServicios();
 
 
     }
