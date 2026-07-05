@@ -10,6 +10,8 @@ public class PaseoLacustre extends Tour{
 
     @Override
     public void MostrarDatos() {
-        System.out.println("Tipo de vehiculo: " + tipoEmbarcacion+"\n"); // no hereda el texto, ya que se repetiria de nuevo y ya lo herede en excursion
+        super.MostrarDatos();
+        System.out.println("Tipo de vehiculo: " + tipoEmbarcacion);
+        System.out.println("-------------------------------------------");
     }
 }

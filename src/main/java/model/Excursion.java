@@ -17,5 +17,6 @@ public class Excursion extends Tour{
         super.MostrarDatos();
         System.out.println("Lugar: " + lugar);
         System.out.println("Calle: " + calle);
+        System.out.println("-------------------------------------------");
     }
 }

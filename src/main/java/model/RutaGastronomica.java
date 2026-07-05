@@ -10,6 +10,8 @@ public class RutaGastronomica extends Tour{
 
     @Override
     public void MostrarDatos() {
-        System.out.println("Numero de paradas: " + numerosDeParadas); // no hereda el texto, ya que se repetiria de nuevo y ya lo herede en excursion
+        super.MostrarDatos();
+        System.out.println("Numero de paradas: " + numerosDeParadas);
+        System.out.println("-------------------------------------------");// no hereda el texto, ya que se repetiria de nuevo y ya lo herede en excursion
     }
 }
